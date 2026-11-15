@@ -33,6 +33,7 @@ h2 { font-size: clamp(1.35rem, 3vw, 2.1rem); line-height: 1.15; letter-spacing: 
 .release h2 { font-size: 1.5rem; }
 .release p { margin-top: .75rem; color: var(--muted); }
 .release .status { color: var(--accent); font-size: 1.12rem; font-weight: 750; }
+.release h3 { margin: 1rem 0 0; font-size: 1.1rem; }
 .release .package { border-top: 1px solid var(--rule); padding-top: .75rem; }
 
 .setup { border-block: 1px solid var(--rule); padding-block: 2rem; }
