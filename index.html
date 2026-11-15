@@ -3,58 +3,50 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Room Bridge release status and guest setup for Ableton Live and FL Studio.">
-  <title>Room Bridge downloads</title>
+  <meta name="description" content="Room Bridge VST3 for sending audio from your DAW into a shared Studio room.">
+  <title>Room Bridge</title>
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
-  <header class="site-header wrap">
-    <a class="wordmark" href="./">Room Bridge</a>
-    <nav aria-label="Page">
-      <a href="#download">Download</a>
-      <a href="#setup">Setup</a>
-    </nav>
+  <header class="site-head frame">
+    <a class="brand" href="./"><span aria-hidden="true"></span>Room Bridge</a>
+    <nav aria-label="Page"><a href="#downloads">Downloads</a><a href="#join">Join in browser</a></nav>
   </header>
 
-  <main id="main" class="wrap">
+  <main class="frame" id="main">
     <section class="hero" aria-labelledby="title">
-      <div>
-        <p class="platform">Windows · Ableton Live · FL Studio</p>
-        <h1 id="title">Play your DAW<br>into the room.</h1>
-        <p class="intro">Send audio from your session. For a public room, hear the other performers through Listen in Studio.</p>
+      <div class="hero-copy">
+        <p class="compatibility">VST3 for Ableton Live and FL Studio</p>
+        <h1 id="title">Your DAW.<br>The room.</h1>
+        <p>Send your session audio into Studio.</p>
       </div>
-      <section id="download" class="release" aria-labelledby="release-title">
-        <h2 id="release-title">Windows download</h2>
-        <!-- When a verified release is public, replace the status and description with a link to its GitHub Releases asset. -->
-        <p class="status">Download unavailable</p>
-        <p>The public Windows package is pending release verification.</p>
-        <p class="package">The package includes the Room Bridge VST3 and its companion app.</p>
-        <h3>macOS</h3>
-        <p>The macOS VST3 preview is under verification. Mac guests can join in Studio now with a guest invite from their host.</p>
-      </section>
+
+      <figure class="plugin">
+        <span class="trace" aria-hidden="true"></span>
+        <img src="./room-bridge-capture.png" width="1120" height="680" alt="Room Bridge VST3 while sending audio. The green meter shows the outgoing level.">
+        <figcaption>Room Bridge · Capture preview</figcaption>
+      </figure>
     </section>
 
-    <section id="setup" class="setup" aria-labelledby="setup-title">
-      <div class="section-header">
-        <h2 id="setup-title">Set up your session</h2>
-        <p>Use a dedicated send bus. On a supported local network, put any native return on a separate track so it stays out of that bus.</p>
-      </div>
-      <div class="paths" role="group" aria-label="Signal routing">
-        <div class="path"><strong>DAW send bus</strong><span aria-hidden="true">→</span><span class="screen-reader">to</span><strong>Room</strong></div>
-        <div class="path"><strong>Room</strong><span aria-hidden="true">→</span><span class="screen-reader">to</span><strong>Studio Listen or LAN return track</strong></div>
-      </div>
-      <ol class="steps">
-        <li><strong>Install and connect.</strong> When available, install the VST3 and companion app. Open the guest invite your host gave you.</li>
-        <li><strong>Send your performance.</strong> Route the tracks you want to share to a dedicated send bus and load Room Bridge there for Send.</li>
-        <li><strong>Monitor the room.</strong> For a public HTTPS room, use Listen in Studio. Native Return currently uses an unencrypted WebSocket connection (ws://) on supported local networks. If you use native Return there, put it on a separate track routed to your monitor output and keep it out of the send bus.</li>
-      </ol>
+    <section class="downloads" id="downloads" aria-labelledby="downloads-title">
+      <h2 id="downloads-title">Downloads</h2>
+      <dl>
+        <div><dt>Windows</dt><dd>Installer unavailable</dd></div>
+        <div><dt>macOS</dt><dd>VST3 preview under verification</dd></div>
+      </dl>
+      <!-- Replace the relevant status with a direct verified release asset link after publication. -->
     </section>
 
-    <section class="browser" aria-labelledby="browser-title">
-      <h2 id="browser-title">Joining in a browser?</h2>
-      <p>Ask your host for a guest invite, then open it in your browser. You can join in a browser on Windows or Mac without installing Room Bridge.</p>
+    <section class="join" id="join" aria-labelledby="join-title">
+      <h2 id="join-title">Already invited?</h2>
+      <p>Open your host’s guest link in a browser. For public rooms, select <strong>Listen</strong> in Studio.</p>
     </section>
+
+    <details class="routing">
+      <summary>DAW routing</summary>
+      <p>Use Room Bridge VST3 and the companion app on a dedicated send bus. Native Return is for supported local <code>ws://</code> rooms. Put it on a separate monitor track outside the send bus.</p>
+    </details>
   </main>
 </body>
 </html>
