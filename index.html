@@ -6,6 +6,7 @@
   <meta name="description" content="Room Bridge VST3 for sending audio from your DAW into a shared Studio room.">
   <title>Room Bridge</title>
   <link rel="stylesheet" href="./styles.css">
+  <script src="./downloads.js" defer></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -31,17 +32,22 @@
 
     <section class="downloads" id="downloads" aria-labelledby="downloads-title">
       <h2 id="downloads-title">Downloads</h2>
-      <dl>
-        <div>
-          <dt>Windows x64</dt>
-          <dd><a class="download" href="https://github.com/Justinandjohnson/room-bridge-downloads/releases/download/v0.0.1-preview.1/room-bridge-guest-0.0.1-win-x64.zip">Download for Windows <span aria-hidden="true">↓</span></a></dd>
+      <div class="download-options">
+        <div class="recommended-download" hidden>
+          <a class="download"><span class="download-label"></span> <span aria-hidden="true">↓</span></a>
         </div>
-        <div>
-          <dt>Mac · Apple Silicon</dt>
-          <dd><a class="download" href="https://github.com/Justinandjohnson/room-bridge-downloads/releases/download/v0.0.1-preview.1/room-bridge-guest-0.0.1-mac-arm64.zip">Download for Mac <span aria-hidden="true">↓</span></a></dd>
-          <dd class="release-note">Preview · Not notarized</dd>
-        </div>
-      </dl>
+        <dl>
+          <div data-download-platform="windows">
+            <dt>Windows x64</dt>
+            <dd><a class="download" href="https://github.com/Justinandjohnson/room-bridge-downloads/releases/download/v0.0.1-preview.2/room-bridge-guest-0.0.1-win-x64.zip">Download for Windows <span aria-hidden="true">↓</span></a></dd>
+          </div>
+          <div data-download-platform="mac">
+            <dt>Mac · Intel and Apple Silicon</dt>
+            <dd><a class="download" href="https://github.com/Justinandjohnson/room-bridge-downloads/releases/download/v0.0.1-preview.2/room-bridge-guest-0.0.1-mac-universal.zip">Download for Mac <span aria-hidden="true">↓</span></a></dd>
+            <dd class="release-note">Preview · Not notarized</dd>
+          </div>
+        </dl>
+      </div>
     </section>
 
     <section class="join" id="join" aria-labelledby="join-title">

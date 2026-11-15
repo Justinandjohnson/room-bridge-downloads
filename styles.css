@@ -42,6 +42,11 @@ dd { margin: .15rem 0 0; color: var(--muted); font: .79rem/1.45 var(--mono); }
 .download { display: inline-flex; align-items: center; justify-content: space-between; gap: .6rem; min-height: 44px; padding: .58rem .85rem; margin-top: .5rem; background: var(--accent); color: #101112; border-radius: .35rem; font-weight: 750; text-decoration: none; }
 .download:hover { background: #ff8968; }
 .download span { font-size: 1rem; }
+.recommended-download { margin-bottom: 1rem; }
+.recommended-download .download { margin-top: 0; }
+.recommended-download .download-label { font: inherit; }
+.recommended-download:not([hidden]) + dl .download { background: transparent; border: 1px solid var(--line); color: var(--text); }
+.recommended-download:not([hidden]) + dl .download:hover { border-color: var(--accent); }
 .release-note { margin-top: .45rem; }
 .join p, details p { color: var(--muted); max-width: 62ch; text-wrap: pretty; }
 .join strong { color: var(--text); }
